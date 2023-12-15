@@ -3,35 +3,37 @@
 <head>
     <title>Sorting Game: LDS Apostles by Seniority</title>
     <!-- <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.14.0/dist/sortable.min.js"></script> -->
-    <style>
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-        }
-        .list-item {
-            background-color: #f0f0f0;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: grab;
-            width: 200px;
-            height: 250px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-        .list-item img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%;
-        }
-    </style>
+<style>
+    .container {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    .list-item {
+        background-color: #f0f0f0;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: grab;
+        width: 200px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .list-item img {
+        width: 150px; /* Set a fixed width */
+        height: 150px; /* Set a fixed height */
+        border-radius: 50%;
+        object-fit: cover; /* This helps maintain the aspect ratio */
+    }
+</style>
+
 </head>
 <body>
     <h2>Sort the LDS Apostles by Seniority</h2>
