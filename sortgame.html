@@ -36,6 +36,7 @@
 
 </head>
 <body>
+    <button id="shuffleButton">Shuffle</button>
     <h2>Sort the LDS Apostles by Seniority</h2>
     <div class="container">
         <ul class="sortable">
@@ -147,6 +148,18 @@
             alert('Correct order!');
         }
 
+        
+    document.getElementById('shuffleButton').addEventListener('click', shuffleItems);
+
+    function shuffleItems() {
+        var container = document.querySelector('.sortable');
+        var items = container.children;
+        var totalItems = items.length;
+        for (var i = totalItems - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            container.appendChild(items[j]);
+        }
+    }
     </script>
 </body>
 </html>
